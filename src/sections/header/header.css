@@ -4,6 +4,7 @@ header {
     place-items: center;
     background: var(--color-white);
     transition: var(--transition);
+    height: auto;
 }
 
 .container__header {

@@ -38,6 +38,7 @@ body {
     font-family: 'Montserrat', sans-serif;
     line-height: 1.6;
     font-size: 0.9rem;
+    overflow-x: hidden;
 }
 
 /* general container class */
@@ -73,6 +74,10 @@ section > p {
 a {
     
     transition: var(--transition);
+}
+
+a:hover {
+    color: bisque;
 }
 
 /* general header styles*/

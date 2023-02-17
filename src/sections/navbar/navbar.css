@@ -1,6 +1,6 @@
 nav {
     width: 100vw;
-    height: 5rem;
+    height: 4rem;
     display: grid;
     place-items: center;
     /* background: var(--color-primary); */
@@ -71,7 +71,7 @@ nav img {
   }
   
   .doner.hide {
-    top: -5rem;
+    top: -4rem;
   }
 
 @media screen and (max-width: 1024px) {

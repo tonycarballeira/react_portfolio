@@ -2,7 +2,7 @@ import React from 'react'
 import './navbar.css'
 import data from './data'
 import Logo from '../../assets/face.jpeg'
-import {IoIosColorPalette} from 'react-icons/io'
+// import {IoIosColorPalette} from 'react-icons/io'
 import Disappear from './Disappear'
 
 const Navbar = () => {
