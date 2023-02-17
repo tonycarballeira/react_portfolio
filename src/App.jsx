@@ -6,14 +6,14 @@ import Portfolio from './sections/portfoliio/Portfolio';
 import Contact from './sections/contact/Contact';
 import Footer from './sections/footer/Footer';
 import FloatingNav from './sections/floating-nav/FloatingNav';
-import Leftside from './sections/sides/Leftside';
+import Sides from './sections/sides/Sides';
 
 
 function App() {
   return (
     <main>
       <Navbar/>
-      <Leftside/>
+      <Sides/>
       <Header/>
       <About/>
       <Portfolio/>

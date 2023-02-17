@@ -1,9 +1,10 @@
 import React from 'react'
-import './leftside.css'
+import './sides.css'
 import data from './data'
 
-const Leftside = () => {
+const Sides = () => {
   return (
+    <>
     <div orientation="left" className='header__socials'>
         { 
             data.map(item => 
@@ -11,9 +12,11 @@ const Leftside = () => {
             )
         }
     </div>
-
-    
-  )
+    <div orientation="right" className='header__email'>
+        <a href="">tonycarballeira@gmail.com</a>
+    </div>
+    </>
+    )
 }
 
-export default Leftside
+export default Sides

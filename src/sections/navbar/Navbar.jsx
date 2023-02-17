@@ -4,6 +4,8 @@ import data from './data'
 import Logo from '../../assets/face.jpeg'
 // import {IoIosColorPalette} from 'react-icons/io'
 import Disappear from './Disappear'
+import {ImDownload} from 'react-icons/im'
+import CV from '../../assets/atc2.pdf'
 
 const Navbar = () => {
 
@@ -23,6 +25,7 @@ const Navbar = () => {
           {
             data.map(item => <li key={item.id}><a href={item.link}>{item.title}</a></li>)
           }
+          <li><a href={CV} download className='resume__button'>Resume<ImDownload/></a></li>
         </ul>        
       </div>
     </nav>
