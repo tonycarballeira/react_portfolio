@@ -15,6 +15,11 @@ nav {
     backdrop-filter: blur(10px);
 }
 
+/* html:has(.menu.visible) {
+
+    overflow: hidden;
+} */
+
 nav img {
     
 }
@@ -54,18 +59,18 @@ nav img {
 }
 
 .resume__button {
-        color: var(--green);
-        background-color: transparent;
-        border: 1px solid white;
-        border-radius: var(--border-radius);
-        padding: 0.75rem 1rem;
-        font-family: var(--font-mono);
-        line-height: 1;
-        text-decoration: none;
-        cursor: pointer;
-        /* transition: var(--transition); */
-        /* transition: background-color 2s ease-out; */
-        transition: all 0.25s cubic-bezier(0.645,0.045,0.355,1);;
+    color: var(--green);
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: var(--border-radius);
+    padding: 0.75rem 1rem;
+    font-family: var(--font-mono);
+    line-height: 1;
+    text-decoration: none;
+    cursor: pointer;
+    /* transition: var(--transition); */
+    /* transition: background-color 2s ease-out; */
+    transition: all 0.25s cubic-bezier(0.645,0.045,0.355,1);;
         
 }
 
@@ -124,21 +129,31 @@ nav img {
     }
 
     .menu {
-        width: 50%;
+        width: 70%;
         height: 100vh;
         background-color: aqua;
         position: absolute;
         z-index: 1;
         right: 0px;
-        top: 0;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-direction: column;
     }
 
-    .hidden {
-        display: none;       
+    .menu.hidden {     
+        right: -70%;
+        transition: 1s;
     }
 
-    .visible {
-        display: inherit;
+    .menu.visible {
+        transition: 1s;
+        right: 0;
+        overflow: hidden;
+    }
+
+    body.menu.visible {
+        overflow: hidden;
     }
 
     /* clicked */

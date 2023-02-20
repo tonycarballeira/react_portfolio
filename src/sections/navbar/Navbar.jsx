@@ -15,21 +15,25 @@ const Navbar = () => {
   }
 
   const [burger_class, setBurgerClass] = useState("burger-bar unclicked");
-    const [menu_class, setMenuClass] = useState("menu hidden");
-    const [isMenuClicked, setIsMenuClicked] = useState(false);
+  const [menu_class, setMenuClass] = useState("menu hidden");
+  const [isMenuClicked, setIsMenuClicked] = useState(false);
+  // const [scrollLock, setScrollLock] = useState(false)
 
-    const updateMenu = () => {
-        if (!isMenuClicked) {
-            setBurgerClass("burger-bar clicked");
-            setMenuClass("menu visible");
-            setIsMenuClicked(true);
-        }
-        else {
-            setBurgerClass("burger-bar unclicked");
-            setMenuClass("menu hidden");
-            setIsMenuClicked(false);
-        }
-    }
+  const updateMenu = () => {
+
+      if (!isMenuClicked) {
+          setBurgerClass("burger-bar clicked");
+          setMenuClass("menu visible");
+          setIsMenuClicked(true);
+      }
+      else {
+          setBurgerClass("burger-bar unclicked");
+          setMenuClass("menu hidden");
+          setIsMenuClicked(false);
+      }
+
+      console.log(menu_class);
+  }
 
 
   return (
@@ -58,7 +62,12 @@ const Navbar = () => {
       </div>
     </nav>
 
-    <div className={menu_class}></div>
+    <div className={menu_class}>
+      {
+        data.map(item => <li key={item.id}><a href={item.link}>{item.title}</a></li>)
+      }
+
+    </div>
     </>
   )
 }
