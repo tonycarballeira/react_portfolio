@@ -5,4 +5,4 @@ const data = [
     {id: 4, link: '#contact', title: 'Contact'},
 ]
 
-export default data;
+    export default data;

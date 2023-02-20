@@ -102,3 +102,75 @@ nav img {
         display: none;
     }
 }
+
+@media screen and (min-width: 0px) and (max-width: 750px) {
+    .burger-menu {
+        height: 1.5em;
+        width: 3em;
+        display: flex;
+        /* background-color: red; */
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-between;
+        cursor: pointer;
+
+    }
+
+    .burger-bar {
+        width: 2em;
+        height: 0.2em;
+        background-color: white;
+        border-radius: 0.5em;
+    }
+
+    .menu {
+        width: 50%;
+        height: 100vh;
+        background-color: aqua;
+        position: absolute;
+        z-index: 1;
+        right: 0px;
+        top: 0;
+    }
+
+    .hidden {
+        display: none;       
+    }
+
+    .visible {
+        display: inherit;
+    }
+
+    /* clicked */
+
+    .burger-bar.clicked:nth-child(1){     
+        transform: rotate(45deg) translate(-0.01em, .90em);
+        transition: ease-out 0.5s;
+    }
+
+    .burger-bar.clicked:nth-child(2){     
+        transform: scale(0);
+        transition: ease-out 0.1s;
+    }
+
+    .burger-bar.clicked:nth-child(3){     
+        transform: rotate(135deg) translate(-0.01em, 1em);
+        transition: ease-out 0.5s;
+    }
+
+    /* unclicked */
+
+    .burger-bar.unclicked {
+        transform: rotate(0) translate(0);
+        transition: cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.5s;
+    }
+
+}
+
+@media screen and (min-width: 750px) {
+    .burger-menu {
+        display: none;
+        /* visibility: hidden; */
+        /* max-height: 0;   */
+    }
+}
