@@ -1,6 +1,6 @@
 header {
     margin-top: 6rem;
-    display: grid;
+    display: flex;
     place-items: center;
     background: var(--color-white);
     transition: var(--transition);
@@ -11,8 +11,25 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     position: relative;
+    min-height: 100vh;
+}
+
+.greeting {
+    margin: 0px 0px 30px 4px;
+    font-weight: 400;
+    font-size: clamp(14px, 5vw, 16px);
+}
+
+.heading {
+    margin-bottom: 10px;
+    font-size: clamp(30px, 5vw, 65px);
+}
+
+.info {
+    /* margin: 20px 0px 0px; */
+    max-width: 540px;
 }
 
 .header__profile {
@@ -23,7 +40,6 @@ header {
 
 .container__header p {
     width: 35rem;
-    text-align: center;
     margin: 0.6rem 0 2rem;
     
 }

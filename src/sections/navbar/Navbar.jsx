@@ -25,14 +25,12 @@ const Navbar = () => {
           setBurgerClass("burger-bar clicked");
           setMenuClass("menu visible");
           setBgBlur(bgBlur => [...bgBlur, 1]);
-          console.log(bgBlur);
           setIsMenuClicked(true);
       }
       else {
           setBurgerClass("burger-bar unclicked");
           setMenuClass("menu hidden");
           setBgBlur([]);
-          console.log(bgBlur);
           setIsMenuClicked(false);
       }
 
@@ -66,7 +64,7 @@ const Navbar = () => {
       </div>
     </nav>
 
-    { bgBlur.map(item => <div key="1" className='blur'></div>)}
+    { bgBlur.map(item => <div key={item} className='blur'></div>)}
 
     <div className={menu_class}>
         <div className='burger-menu' onClick={updateMenu}>
