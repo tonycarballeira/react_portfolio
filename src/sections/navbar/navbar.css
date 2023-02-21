@@ -15,10 +15,7 @@ nav {
     backdrop-filter: blur(10px);
 }
 
-html:has(.menu.visible) {
 
-    overflow: hidden;
-}
 
 .nav__container {
     width: 90%;
@@ -109,7 +106,6 @@ html:has(.menu.visible) {
         height: 1.5em;
         width: 3em;
         display: flex;
-        /* background-color: red; */
         flex-direction: column;
         align-items: flex-start;
         justify-content: space-between;
@@ -129,13 +125,16 @@ html:has(.menu.visible) {
         height: 100vh;
         background-color: aqua;
         position: fixed;
-        z-index: 1;
+        z-index: 2;
         top: 0;
         right: 0px;
         display: flex;
         justify-content: space-evenly;
         align-items: center;
         flex-direction: column;
+        filter: none;
+        box-shadow: 0 1rem 1.5rem hsla(var(--primary-hue),
+     68%, 42%, 20%);
     }
 
     .menu.hidden {     
@@ -152,7 +151,7 @@ html:has(.menu.visible) {
     .menu > .burger-menu {
         position: absolute;
         top: 20px;
-        right: 20px;
+        right: 10px;
     }
 
     /* clicked */
@@ -179,13 +178,26 @@ html:has(.menu.visible) {
         transition: cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.5s;
     }
 
+    body:has(.menu.visible):not(.menu) {
+        /* filter:blur(4px); */
+        overflow: hidden;
+    }
+
+    .blur {
+        height: 100%;
+        width: 100%;
+        /* filter: blur(4px); */
+        position: fixed;
+        background-color: transparent;
+        backdrop-filter: blur(2.7px);
+        z-index: 1;
+    }
+
 }
 
 @media screen and (min-width: 750px) {
     .burger-menu {
         display: none;
-        /* visibility: hidden; */
-        /* max-height: 0;   */
     }
 
     .menu {

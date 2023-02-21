@@ -17,21 +17,26 @@ const Navbar = () => {
   const [burger_class, setBurgerClass] = useState("burger-bar unclicked");
   const [menu_class, setMenuClass] = useState("menu hidden");
   const [isMenuClicked, setIsMenuClicked] = useState(false);
+  const [bgBlur, setBgBlur] = useState([]);
 
   const updateMenu = () => {
 
       if (!isMenuClicked) {
           setBurgerClass("burger-bar clicked");
           setMenuClass("menu visible");
+          setBgBlur(bgBlur => [...bgBlur, 1]);
+          console.log(bgBlur);
           setIsMenuClicked(true);
       }
       else {
           setBurgerClass("burger-bar unclicked");
           setMenuClass("menu hidden");
+          setBgBlur([]);
+          console.log(bgBlur);
           setIsMenuClicked(false);
       }
 
-      console.log(menu_class);
+      
   }
 
 
@@ -60,6 +65,8 @@ const Navbar = () => {
       
       </div>
     </nav>
+
+    { bgBlur.map(item => <div key="1" className='blur'></div>)}
 
     <div className={menu_class}>
         <div className='burger-menu' onClick={updateMenu}>
