@@ -17,7 +17,6 @@ const Navbar = () => {
   const [burger_class, setBurgerClass] = useState("burger-bar unclicked");
   const [menu_class, setMenuClass] = useState("menu hidden");
   const [isMenuClicked, setIsMenuClicked] = useState(false);
-  // const [scrollLock, setScrollLock] = useState(false)
 
   const updateMenu = () => {
 
@@ -63,10 +62,14 @@ const Navbar = () => {
     </nav>
 
     <div className={menu_class}>
+        <div className='burger-menu' onClick={updateMenu}>
+            <div className={burger_class}></div>
+            <div className={burger_class}></div>
+            <div className={burger_class}></div>
+        </div>
       {
-        data.map(item => <li key={item.id}><a href={item.link}>{item.title}</a></li>)
+        data.map(item => <li key={item.id}><a href={item.link} onClick={updateMenu}>{item.title}</a></li>)
       }
-
     </div>
     </>
   )
