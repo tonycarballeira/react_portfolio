@@ -24,7 +24,7 @@ header {
 
 .heading {
     margin-bottom: 10px;
-    font-size: clamp(30px, 5vw, 65px);
+    font-size: clamp(30px, 7vw, 65px);
 }
 
 .info {
