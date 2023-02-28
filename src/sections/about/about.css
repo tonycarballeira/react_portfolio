@@ -28,6 +28,30 @@
     background-color: black;       
 }
 
+.skills__container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+
+.frontend_skills {
+    height: 100px;
+    width: 30%;
+    /* background-color: red; */
+}
+
+.backend_skills {
+    height: 100px;
+    width: 30%;
+    /* background-color: green; */
+}
+
+.languages {
+    height: 100px;
+    width: 30%;
+    /* background-color: blue; */
+}
+
 @media screen and (min-width: 0px) and (max-width: 750px) {
     .about__container {
         flex-direction: column;

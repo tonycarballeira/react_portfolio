@@ -17,7 +17,6 @@ function App() {
       <Sides/>
       <Header/>
       <About/>
-      <Skills/>
       <Portfolio/>
       <Contact/>
       <Footer/>

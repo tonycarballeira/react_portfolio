@@ -26,7 +26,34 @@ const About = () => {
               </div>
             </div>
           </div> 
-        
+          <div className="container skills__container">
+            <div className="frontend_skills">
+              <ul>
+                <li>ReactJS</li>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>Bootstrap</li>
+                <li>TailwindCSS</li>
+              </ul>
+            </div>
+            <div className="backend_skills">
+              <ul>
+                  <li>NodeJS</li>
+                  <li>ExpressJS</li>
+                  <li>MongoDB</li>
+                  <li>Rails</li>
+                  <li>AWS</li>
+                </ul>
+            </div>
+            <div className="languages">
+            <ul>
+                <li>Javascript</li>
+                <li>Ruby</li>
+                <li>Python</li>
+                <li>Typescript</li>
+              </ul>
+            </div>
+          </div>
     </section>
   )
 }
