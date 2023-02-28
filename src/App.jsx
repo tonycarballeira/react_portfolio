@@ -7,6 +7,7 @@ import Contact from './sections/contact/Contact';
 import Footer from './sections/footer/Footer';
 import FloatingNav from './sections/floating-nav/FloatingNav';
 import Sides from './sections/sides/Sides';
+import Skills from './sections/skills/Skills'
 
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
       <Sides/>
       <Header/>
       <About/>
+      <Skills/>
       <Portfolio/>
       <Contact/>
       <Footer/>
