@@ -7,6 +7,7 @@
 
 .about__left {
     margin-right: 40px;
+   
 }
 
 
@@ -73,3 +74,7 @@
         width: 170px;
     }
 }
+
+/* .about__portrait > img {
+    width: 280px;
+} */
