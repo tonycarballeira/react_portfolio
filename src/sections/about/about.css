@@ -38,19 +38,21 @@
 .frontend_skills {
     height: 100px;
     width: 30%;
-    /* background-color: red; */
+    text-align: center;
 }
 
 .backend_skills {
     height: 100px;
     width: 30%;
-    /* background-color: green; */
+    text-align: center;
+
 }
 
 .languages {
     height: 100px;
     width: 30%;
-    /* background-color: blue; */
+    text-align: center;
+
 }
 
 @media screen and (min-width: 0px) and (max-width: 750px) {

@@ -12,11 +12,21 @@ const Portfolio = () => {
         <div className="header_div">
           <h2 className='about_header'>Projects</h2>
         </div>
-        <div className="projectsList">
+        {/* <div className="projectsList">
           <ProjectItem name="social media website" image={Face}/>
           <ProjectItem name="Spotify CLone" image={Face}/>
           <ProjectItem name="Spotify CLone" image={Face}/>
-        </div>       
+        </div>        */}
+
+        <div className="projectCards">
+          <div className='cards'></div>
+          <div className='cards'></div>
+          <div className='cards'></div> 
+          <div className='cards'></div> 
+          <div className='cards'></div>
+          <div className='cards'></div>       
+        </div>
+
       </div>
     </section>
   )
