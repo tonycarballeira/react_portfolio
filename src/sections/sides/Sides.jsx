@@ -13,7 +13,7 @@ const Sides = () => {
         }
     </div>
     <div orientation="right" className='header__email'>
-        <a href="">tonycarballeira@gmail.com</a>
+        <a href="#contact">tonycarballeira@gmail.com</a>
     </div>
     </>
     )

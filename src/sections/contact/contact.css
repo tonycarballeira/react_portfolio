@@ -1,0 +1,29 @@
+.contact_header::after { 
+    content: "";
+    display: inline-block;
+    position: relative;
+    top: -10px;
+    width: 300px;
+    height: 1px;
+    margin-left: 20px;
+    background-color: black;       
+  }
+
+  .intouch {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    gap: 10px;
+    margin-top: 30px;
+    
+  }
+
+
+  @media screen and (min-width: 0px) and (max-width: 750px) {
+
+    .contact_header::after {
+        width: 170px;
+    }
+  }

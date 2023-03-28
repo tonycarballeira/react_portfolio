@@ -19,8 +19,6 @@ function App() {
       <About/>
       <Portfolio/>
       <Contact/>
-      <Footer/>
-      <FloatingNav/>
     </main>
   );
 }

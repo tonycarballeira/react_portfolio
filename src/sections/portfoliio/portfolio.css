@@ -8,10 +8,18 @@
 }
 
 .cards {
+  box-shadow: 0 10px 30px -15px blue;
+  border-radius: 4px;
   width: clamp(200px, 40%, 400px);
   height: 300px;
   background-color: darkblue;
-  flex-basis: calc(33.333333% - 10px)
+  flex-basis: calc(33.333333% - 10px);
+  padding: 25px 25px 20px;
+}
+
+.cards:hover {
+  transform: translateY(-0.3rem);
+  transition: all 0.25s cubic-bezier(0.645,0.045,0.355,1);
 }
 
 .projectCardsList {
@@ -63,8 +71,6 @@
 }
 
 .projectItem .bgImage {
-  /* border-top-left-radius: 15px;
-  border-top-right-radius: 15px; */
   width: 100%;
   height: 200px;
   background-position: center;
@@ -142,4 +148,42 @@
   .cards {
     flex-basis: calc(100% - 10px)
   }
+}
+
+.project-description {
+  box-shadow: 0 10px 30px -15px var(--navy-shadow);
+  position: relative;
+  z-index: 2;
+  margin-top: 20px;
+}
+
+.project-tech-list {
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  z-index: 2;
+  margin: 25px 0px 10px;
+  padding: 0px;
+  list-style: none;
+}
+
+.project-tech-list li {
+  position: relative;
+  padding-right: 11px;
+}
+
+.project-links {
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  position: relative;
+  margin-top: 30px;
+  justify-content: flex-start;
+  
+}
+
+.project-links a {
+  display: block;
+  width: 35px  ;
+  padding-right: 10px;
 }
