@@ -18,13 +18,14 @@ const Header = () => {
         
         <div>
           <p className='info'>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+          I’m a web developer with frontend and backend experience. Currently, I’m focused on building projects and 
+          joining a development team. 
           </p>
         </div>
         
         <div className='header__cta'>
-          <a href="#contact" className='btn light'>Let's Talk</a>
-          <a href="#portfolio" className='btn light'>My Work</a>
+          <a href="#contact" className='btn light'>Contact</a>
+          <a href="#portfolio" className='btn light'>Projects</a>
         </div>
       </div>
      

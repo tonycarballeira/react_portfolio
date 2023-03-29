@@ -14,8 +14,8 @@ const About = () => {
             </div>
             <div className="inner">
               <div className="about__left">          
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <p>I have had the opportunity of working with a diverse set of programming languages and technologies alongside some talented teams on a number of projects.</p><br></br>
+                <p>I have a wide range of skills that include design (and working closely with designers), front-end development (HTML5, CSS3, Javascript, Responsive, UX), back-end development using open source technologies (Rails, Express, Django), interacting with databases (SQL Server, Postgres, MySQL), and being a google search master. </p>
                 {/* <a href={CV} download className='btn primary' target="blank" rel='noopener noreferrer'>Download CV<ImDownload/></a> */}
               </div>
 
@@ -27,31 +27,46 @@ const About = () => {
             </div>
           </div> 
           <div className="container skills__container">
-            <div className="frontend_skills">
+
+          <div className="languages">
+              <p>Languages</p><br></br>
               <ul>
-                <li>ReactJS</li>
-                <li>HTML</li>
-                <li>CSS</li>
+                  <li>Html / Css</li>
+                  <li>Javascript</li>
+                  <li>Ruby</li>
+                  <li>Python</li>
+                  <li>Typescript</li>
+                </ul>
+            </div>
+            <div className="frontend_skills">
+              <p>Frontend</p><br></br>
+              <ul>
+                <li>Jquery</li>
+                <li>React</li>
+                <li>Angular</li>               
                 <li>Bootstrap</li>
                 <li>TailwindCSS</li>
               </ul>
             </div>
-            <div className="backend_skills">
+            <div className="backend_skills two">
+              <p>Backend</p><br></br>
               <ul>
-                  <li>NodeJS</li>
-                  <li>ExpressJS</li>
-                  <li>MongoDB</li>
-                  <li>Rails</li>
-                  <li>AWS</li>
+                <li>Rails</li>
+                <li>ExpressJS</li>
+                <li>Django</li>
+                <li>SQL</li>
+                <li>MongoDB</li>
                 </ul>
             </div>
-            <div className="languages">
-            <ul>
-                <li>Javascript</li>
-                <li>Ruby</li>
-                <li>Python</li>
-                <li>Typescript</li>
-              </ul>
+            
+            <div className="languages two">
+              <p>Tools</p><br></br>
+              <ul>
+                  <li>Git</li>
+                  <li>Photoshop</li>
+                  <li>Excel</li>
+                  <li>Google</li>
+                </ul>
             </div>
           </div>
     </section>

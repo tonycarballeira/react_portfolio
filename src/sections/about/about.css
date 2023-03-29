@@ -42,6 +42,7 @@ li {
 
 .skills__container {
     display: flex;
+    flex-direction:row;  
     justify-content: space-between;
     margin-top: 40px;
 }
@@ -85,6 +86,20 @@ li {
 
     .about_header::after {
         width: 170px;
+    }
+
+    .skills__container {
+        flex-flow: row wrap;
+    }
+    
+
+    .skills__container > div {     
+        flex-basis: calc(50% - 10px);       
+    }
+
+    .two {
+        padding-top: 70px;
+        text-align: center;
     }
 }
 
