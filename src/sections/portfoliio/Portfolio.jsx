@@ -5,6 +5,10 @@ import ProjectItem from './ProjectItem'
 import Face from '../../assets/face.jpeg'
 import Logo from '../../assets/face.jpeg'
 import {useState} from 'react'
+import {RxImage} from 'react-icons/rx'
+import {FiGithub} from 'react-icons/fi'
+import {GoLinkExternal} from 'react-icons/go'
+
 
 
 const Portfolio = () => {
@@ -47,7 +51,7 @@ const Portfolio = () => {
         <div className="projectCards">
 
           {projects.map((project, index) => (
-              <div key={index} className='cards' id={project.id} onClick={() => slide(project.id)}>
+            <div key={index} className='cards' id={project.id} onClick={() => slide(project.id)}>
               <h3 className="project-title" onClick={() => slide(project.id)}><a>{project.name}</a></h3>
               <div className="project-description"><p>{project.description}</p></div> 
               <ul className="project-tech-list">
@@ -57,20 +61,21 @@ const Portfolio = () => {
               </ul>
   
               <div className='coco'>
-                  <a href={project.git} aria-label="GitHub Link" rel="noopener noreferrer" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" ><title>GitHub</title><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg></a>
-                  <a href={project.site} aria-label="External Link" className="external" rel="noopener noreferrer" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><title>External Link</title><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg></a>
+                  <a id="imager" onClick={() => slide(project.id)}><RxImage size={26}/></a>
+                  <a href={project.git}><FiGithub size={25}/></a>
+                  <a href={project.site}><GoLinkExternal size={26}/></a>
               </div> 
               
-              <div className={project.class} onClick={() => slide(project.id)}>
+              <div className={project.class}>
                
                   <div className="project-links">
                     <div className="about__portrait">
                       <div><a href={project.img_href} rel="noopener noreferrer" target="_blank"><img src={project.img_src} alt="portrait" /></a></div>
                     </div>
-                    <div className='coco'>
+                    {/* <div className='coco'>
                         <a href={project.git} aria-label="GitHub Link" rel="noopener noreferrer" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" ><title>GitHub</title><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg></a>
                         <a href={project.site} aria-label="External Link" className="external" rel="noopener noreferrer" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><title>External Link</title><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg></a>
-                    </div> 
+                    </div>  */}
                   </div>
               </div>
             </div>

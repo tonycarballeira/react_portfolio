@@ -93,6 +93,10 @@ nav {
     top: -4rem;
   }
 
+  .menu.visible > li {
+    font-size: 20px;
+  }
+
 
 
 @media screen and (max-width: 750px) {
@@ -146,6 +150,8 @@ nav {
         transition: 1s;
         right: 0;
         overflow: hidden;
+        padding-top: 6%;
+        padding-bottom: 6%;
     } 
     
     .menu > .burger-menu {
