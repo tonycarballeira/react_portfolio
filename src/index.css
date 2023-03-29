@@ -56,6 +56,7 @@ section {
     padding: 10rem;
     background: var(--color-light);
     transition: var(--transition);
+    background-color: #0a192f;
 }
 
 section:nth-child(even) {

@@ -209,9 +209,9 @@
   transition: all 0.5s ease-in-out;
 }
 
-/* .cards:hover .overlay {
+.cards:hover .overlay {
   width: 100%;
-} */
+}
 
 .overlay.slide {
   width: 100%;  
