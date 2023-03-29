@@ -14,7 +14,7 @@
     width: 1px;
     height: 90px;
     margin: 0px auto;
-    background-color: black;
+    background-color: #d38076;
     display: flex;
     justify-content: center;
 }
@@ -34,7 +34,7 @@
 
 .header__email a:hover {
     /* background: var(--color-primary); */
-    color: rgb(201, 201, 34);
+    color: white;
     transform: translateY(-0.5rem);
 }
 
@@ -61,7 +61,7 @@
     width: 1px;
     height: 90px;
     margin: 0px auto;
-    background-color: black;
+    background-color: #d38076;
     display: flex;
     justify-content: center;
 }

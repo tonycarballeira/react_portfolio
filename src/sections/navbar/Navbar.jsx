@@ -6,6 +6,7 @@ import Logo from '../../assets/face.jpeg'
 import Disappear from './Disappear'
 import {ImDownload} from 'react-icons/im'
 import CV from '../../assets/atc2.pdf'
+import {TfiThumbUp} from 'react-icons/tfi'
 
 const Navbar = () => {
 
@@ -44,7 +45,7 @@ const Navbar = () => {
       <div className="container nav__container"> 
         <div className='nav__logo'>
           <a href="index.html" >
-            <img src={Logo} alt="" />
+            <TfiThumbUp size={35}/>
           </a>  
         </div>
                   
@@ -75,6 +76,7 @@ const Navbar = () => {
       {
         data.map(item => <li key={item.id}><a href={item.link} onClick={updateMenu}>{item.title}</a></li>)
       }
+      <li><a href={CV} download className='resume__button'>Resume <ImDownload/></a></li>
     </div>
     </>
   )

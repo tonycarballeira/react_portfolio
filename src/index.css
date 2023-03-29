@@ -40,6 +40,7 @@ body {
     line-height: 1.3;
     font-size: 0.9rem;
     overflow-x: hidden;
+    background-color: #325d7f;
 }
 
 /* general container class */
@@ -56,7 +57,7 @@ section {
     padding: 10rem;
     background: var(--color-light);
     transition: var(--transition);
-    background-color: #0a192f;
+    background-color: #325d7f;
 }
 
 section:nth-child(even) {
@@ -74,12 +75,16 @@ section > p {
 }
 
 a {
-    
+    color: #f9b294;
     transition: var(--transition);
 }
 
 a:hover {
-    color: rgb(202, 126, 34);
+    color: white;
+}
+
+p {
+    color: #f9b294;
 }
 
 /* general header styles*/
@@ -91,10 +96,16 @@ h1, h2, h3, h4, h5, h6 {
 
 h1 {
     font-size: 3rem;
+    color: #c06c86;
 }
 
 h2 {
     font-size: 2rem;
+    color: #c06c86;
+}
+
+:after {
+    color: #c06c86;;
 }
 
 h3 {
@@ -129,8 +140,8 @@ h6 {
     display: flex;
     align-items: center;
     gap: 1rem;
-    background: var(--color-light);
-    color: var(--color-black);
+    background: #45637b;
+    color: #f9b294;
     padding: 0.6rem 2.5rem;
     border: 2px solid transparent;
     border-radius: var(--border-radius-2);
@@ -153,8 +164,8 @@ h6 {
 }
 
 .btn.primary {
-    background: var(--color-primary);
-    color: white;
+    background: #6d5c7e;
+    color: #f9b294;
 }
 
 .btn.primary:hover {

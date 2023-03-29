@@ -6,14 +6,14 @@ import data from './data'
 const Header = () => {
   return (
     
-      <div className="container container__header">
+      <div id="maniac" className="container container__header">
         {/* <div className="header__profile">
           <img src={Logo} alt="header portrait" />
         </div> */}
         <div>
           <h2 className='greeting'>Hi, my name is</h2>
         </div>
-        <div><h2 className='heading'>Tony Carballeira.</h2></div>
+        <div><h2  id="change" className='heading'>Tony Carballeira.</h2></div>
         <div><h2 className='heading'>I build things for the web.</h2></div>
         
         <div>
@@ -23,7 +23,7 @@ const Header = () => {
         </div>
         
         <div className='header__cta'>
-          <a href="#contact" className='btn primary'>Let's Talk</a>
+          <a href="#contact" className='btn light'>Let's Talk</a>
           <a href="#portfolio" className='btn light'>My Work</a>
         </div>
       </div>

@@ -2,9 +2,17 @@ header {
     margin-top: 6rem;
     display: flex;
     place-items: center;
-    background: var(--color-white);
+    background: #0a192f;
     transition: var(--transition);
     height: auto;
+}
+
+#change {
+    color: #f9b294;
+}
+
+#maniac {
+    background-color: #325d7f;
 }
 
 .container__header {
@@ -21,6 +29,7 @@ header {
     margin: 0px 0px 30px 4px;
     font-weight: 400;
     font-size: clamp(14px, 5vw, 16px);
+    color: #c06c86  ;
 }
 
 .heading {
@@ -62,15 +71,15 @@ header {
 .header__socials a {
     width: 2rem;
     height: 2rem;
-    background: var(--color-light);
+    background: #325d7f;
     display: grid;
     place-items: center;
     border-radius: var(--border-radius-3);
 
 }
 .header__socials a:hover {
-    background: var(--color-primary);
-    color: var(--color-white);
+    border-color: var(--color-light);
+    color: white;
     transform: translateX(-0.5rem);
 }
 
