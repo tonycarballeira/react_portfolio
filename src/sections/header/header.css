@@ -77,6 +77,11 @@ header {
     border-radius: var(--border-radius-3);
 
 }
+
+.btn {
+    box-shadow: 0 10px 30px -15px blue;
+}
+
 .header__socials a:hover {
     border-color: var(--color-light);
     color: white;
