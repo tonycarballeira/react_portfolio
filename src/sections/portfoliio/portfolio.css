@@ -11,7 +11,7 @@
   box-shadow: 0 10px 30px -15px blue;
   border-radius: 4px;
   width: clamp(200px, 40%, 400px);
-  height: 300px;
+  height: 320px;
   background-color: #45637b;
   flex-basis: calc(50% - 10px);
   padding: 25px 25px 20px;
@@ -143,6 +143,27 @@
 @media only screen and (min-width: 750px) and (max-width: 1240px) {
   .cards {
     flex-basis: calc(50% - 10px)
+  }
+}
+
+@media only screen and (min-width: 832px) and (max-width: 1080px) {
+  .cards {
+    flex-basis: calc(50% - 10px);
+    height: 380px;
+  }
+}
+
+@media only screen and (min-width: 398px) and (max-width: 593px) {
+  .cards {
+    flex-basis: calc(50% - 10px);
+    height: 380px;
+  }
+}
+
+@media only screen and (min-width: 0px) and (max-width: 398px) {
+  .cards {
+    flex-basis: calc(50% - 10px);
+    height: 460px;
   }
 }
 

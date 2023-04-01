@@ -5,7 +5,7 @@ import Logo from '../../assets/face.jpeg'
 // import {IoIosColorPalette} from 'react-icons/io'
 import Disappear from './Disappear'
 import {ImDownload} from 'react-icons/im'
-import CV from '../../assets/atc2.pdf'
+// import CV from '../../assets/atc2.pdf'
 import {TfiThumbUp} from 'react-icons/tfi'
 
 const Navbar = () => {
@@ -53,7 +53,7 @@ const Navbar = () => {
           {
             data.map(item => <li key={item.id}><a href={item.link}>{item.title}</a></li>)
           }
-          <li><a href={CV} download className='resume__button'>Resume <ImDownload/></a></li>
+          <li><a href={""} download className='resume__button'>Resume <ImDownload/></a></li>
         </ul> 
 
         <div className='burger-menu' onClick={updateMenu}>
@@ -68,15 +68,11 @@ const Navbar = () => {
     { bgBlur.map(item => <div key={item} className='blur'></div>)}
 
     <div className={menu_class}>
-        <div className='burger-menu' onClick={updateMenu}>
-            <div className={burger_class}></div>
-            <div className={burger_class}></div>
-            <div className={burger_class}></div>
-        </div>
+        
       {
         data.map(item => <li key={item.id}><a href={item.link} onClick={updateMenu}>{item.title}</a></li>)
       }
-      <li><a href={CV} download className='resume__button'>Resume <ImDownload/></a></li>
+      <li><a href={""} download className='resume__button'>Resume <ImDownload/></a></li>
     </div>
     </>
   )

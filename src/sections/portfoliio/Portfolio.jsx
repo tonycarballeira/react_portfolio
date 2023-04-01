@@ -3,7 +3,9 @@ import { motion } from 'framer-motion';
 import './portfolio.css'
 import ProjectItem from './ProjectItem'
 import Face from '../../assets/face.jpeg'
-import Logo from '../../assets/face.jpeg'
+import Chordbuddy from '../../assets/chordbuddy.png'
+import Crypto from '../../assets/cryptofaqs.png'
+import School from '../../assets/int_school.png'
 import {useState} from 'react'
 import {RxImage} from 'react-icons/rx'
 import {FiGithub} from 'react-icons/fi'
@@ -28,18 +30,18 @@ const Portfolio = () => {
   };
 
   const [projects, setProjects] = useState([
-    { id: "1", name: "Halcyon Theme", 
-    description: "A minimal, dark blue theme for VS Code, Sublime Text, Atom, iTerm, and more. Available on", 
-    techs: ["VS Code", "Sublime Text", "Atom", "Iterm2", "Hyper" ], 
-    git: "", site: "", img_href:"", img_src: Logo, selected: false, class: "overlay" },
-    { id: "2", name: "Halcyon Theme", 
-    description: "A minimal, dark blue theme for VS Code, Sublime Text, Atom, iTerm, and more. Available on", 
-    techs: ["VS Code", "Sublime Text", "Atom", "Iterm2", "Hyper" ], 
-    git: "", site: "", img_href:"", img_src: Logo, selected: false, class: "overlay" },
-    { id: "3", name: "Halcyon Theme", 
-    description: "A minimal, dark blue theme for VS Code, Sublime Text, Atom, iTerm, and more. Available on", 
-    techs: ["VS Code", "Sublime Text", "Atom", "Iterm2", "Hyper" ], 
-    git: "", site: "", img_href:"", img_src: Logo, selected: false, class: "overlay" }
+    { id: "1", name: "Chord Buddy", 
+    description: "Piano chord suggester app for songwriting and music theory study. Use an in app piano to key in a chord and a new chord will be generated to follow it. Create and save chord progressions.", 
+    techs: ["Rails", "Bootstrap", "jquery", "Postgres", "Html / CSS" ], 
+    git: "", site: "", img_href:"https://cool-butterfly-2818.fly.dev/chords/search", img_src: Chordbuddy, selected: false, class: "overlay" },
+    { id: "2", name: "Crypto Faqs", 
+    description: "Cryptocurrency information app showing coin stats and a bitcoin halving countdown timer. Navigate through a list of top cryptocurrencies and click for more info.", 
+    techs: ["React", "TailwindCSS", "Javascript", "Coingecko API", "Blockchain API" ], 
+    git: "", site: "", img_href:"https://grubby-rice.surge.sh/", img_src: Crypto, selected: false, class: "overlay" },
+    { id: "3", name: "School of Interactive Design", 
+    description: "An online school for learning game design and development. A frontend demo of the app i originally built according to a designer's mockup.", 
+    techs: ["Rails", "Bootstrap", "Jquery", "Html / CSS", "SQL" ], 
+    git: "", site: "", img_href:"https://int-school2-development.onrender.com/", img_src: School, selected: false, class: "overlay" }
   ]);
 
   return (
