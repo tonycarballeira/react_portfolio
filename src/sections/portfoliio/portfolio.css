@@ -163,7 +163,7 @@
 @media only screen and (min-width: 0px) and (max-width: 398px) {
   .cards {
     flex-basis: calc(50% - 10px);
-    height: 430px;
+    height: 410px;
   }
 }
 
