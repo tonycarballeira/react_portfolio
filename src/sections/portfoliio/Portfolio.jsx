@@ -48,7 +48,7 @@ const Portfolio = () => {
     <section id="portfolio">
       <div className="container portfolio__container">
         <div className="header_div">
-          <h2 className='about_header'>Projects</h2>
+          <h2 className='port_header'>Projects</h2>
         </div>
         <div className="projectCards">
 

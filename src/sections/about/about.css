@@ -69,16 +69,23 @@ li {
 
 @media screen and (min-width: 0px) and (max-width: 415px) {
     .about_header::after {  
-        width: 150px;       
+        width: 100px;       
     }
 }
 
-@media screen and (min-width: 0px) and (max-width: 388px) {
-
-    .about_header::after {
-        width: 130px;
+@media screen and (min-width: 0px) and (max-width: 358px) {
+    .about_header::after {  
+        width: 80px;       
     }
-  }
+}
+
+@media screen and (min-width: 0px) and (max-width: 329px) {
+    .about_header::after {  
+        width: 60px;       
+    }
+}
+
+
 
 @media screen and (min-width: 0px) and (max-width: 750px) {
     .about__container {
