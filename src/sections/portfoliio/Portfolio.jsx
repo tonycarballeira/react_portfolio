@@ -33,15 +33,15 @@ const Portfolio = () => {
     { id: "1", name: "Chord Buddy", 
     description: "Piano chord suggester app for songwriting and music theory study. Use an in app piano to key in a chord and a new chord will be generated to follow it. Create and save chord progressions.", 
     techs: ["Rails", "Bootstrap", "jquery", "Postgres", "Html / CSS" ], 
-    git: "", site: "", img_href:"https://cool-butterfly-2818.fly.dev/chords/search", img_src: Chordbuddy, selected: false, class: "overlay" },
+    git: "https://github.com/tonycarballeira/chord_buddy_railsupdate.git", site: "https://cool-butterfly-2818.fly.dev/chords/search", img_href:"https://cool-butterfly-2818.fly.dev/chords/search", img_src: Chordbuddy, selected: false, class: "overlay" },
     { id: "2", name: "Crypto Faqs", 
     description: "Cryptocurrency information app showing coin stats and a bitcoin halving countdown timer. Navigate through a list of top cryptocurrencies and click for more info.", 
     techs: ["React", "TailwindCSS", "Javascript", "Coingecko API", "Blockchain API" ], 
-    git: "", site: "", img_href:"https://grubby-rice.surge.sh/", img_src: Crypto, selected: false, class: "overlay" },
+    git: "https://github.com/tonycarballeira/react_bitcoin_countdown.git", site: "https://grubby-rice.surge.sh/", img_href:"https://grubby-rice.surge.sh/", img_src: Crypto, selected: false, class: "overlay" },
     { id: "3", name: "School of Interactive Design", 
     description: "An online school for learning game design and development. A frontend demo of the app i originally built according to a designer's mockup.", 
     techs: ["Rails", "Bootstrap", "Jquery", "Html / CSS", "SQL" ], 
-    git: "", site: "", img_href:"https://int-school2-development.onrender.com/", img_src: School, selected: false, class: "overlay" }
+    git: "https://github.com/tonycarballeira/interactive_school_portfolio_update.git", site: "https://int-school2-development.onrender.com/", img_href:"https://int-school2-development.onrender.com/", img_src: School, selected: false, class: "overlay" }
   ]);
 
   return (
@@ -64,8 +64,8 @@ const Portfolio = () => {
   
               <div className='coco'>
                   <a id="imager" onClick={() => slide(project.id)}><RxImage size={26}/></a>
-                  <a href={project.git}><FiGithub size={25}/></a>
-                  <a href={project.site}><GoLinkExternal size={26}/></a>
+                  <a href={project.git} target="_blank"><FiGithub size={25}/></a>
+                  <a href={project.site} target="_blank"><GoLinkExternal size={26}/></a>
               </div> 
               
               <div className={project.class}>
