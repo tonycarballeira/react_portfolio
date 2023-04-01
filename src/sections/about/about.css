@@ -67,6 +67,19 @@ li {
 
 }
 
+@media screen and (min-width: 0px) and (max-width: 415px) {
+    .about_header::after {  
+        width: 150px;       
+    }
+}
+
+@media screen and (min-width: 0px) and (max-width: 388px) {
+
+    .about_header::after {
+        width: 130px;
+    }
+  }
+
 @media screen and (min-width: 0px) and (max-width: 750px) {
     .about__container {
         flex-direction: column;
@@ -82,10 +95,6 @@ li {
 
     .about__right {
         margin-top: 4em;
-    }
-
-    .about_header::after {
-        width: 170px;
     }
 
     .skills__container {

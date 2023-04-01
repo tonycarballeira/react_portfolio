@@ -21,9 +21,15 @@
   }
 
 
-  @media screen and (min-width: 0px) and (max-width: 750px) {
-
-    .contact_header::after {
-        width: 170px;
+  @media screen and (min-width: 0px) and (max-width: 415px) {
+    .contact_header::after {  
+        width: 150px;       
     }
+}
+
+@media screen and (min-width: 0px) and (max-width: 388px) {
+
+  .contact_header::after {
+      width: 130px;
   }
+}

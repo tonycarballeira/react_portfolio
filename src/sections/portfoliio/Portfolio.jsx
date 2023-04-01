@@ -31,7 +31,7 @@ const Portfolio = () => {
 
   const [projects, setProjects] = useState([
     { id: "1", name: "Chord Buddy", 
-    description: "Piano chord suggester app for songwriting and music theory study. Use an in app piano to key in a chord and a new chord will be generated to follow it. Create and save chord progressions.", 
+    description: "Piano chord suggester app for songwriting and music theory study. Use an in-app piano to key in a chord and a new chord will be generated to follow it. Create and save chord progressions.", 
     techs: ["Rails", "Bootstrap", "jquery", "Postgres", "Html / CSS" ], 
     git: "https://github.com/tonycarballeira/chord_buddy_railsupdate.git", site: "https://cool-butterfly-2818.fly.dev/chords/search", img_href:"https://cool-butterfly-2818.fly.dev/chords/search", img_src: Chordbuddy, selected: false, class: "overlay" },
     { id: "2", name: "Crypto Faqs", 

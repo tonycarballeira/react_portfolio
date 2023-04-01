@@ -133,10 +133,17 @@
   background-color: #d38076;       
 }
 
-@media screen and (min-width: 0px) and (max-width: 750px) {
+@media screen and (min-width: 0px) and (max-width: 415px) {
 
   .about_header::after {
-      width: 170px;
+      width: 150px;
+  }
+}
+
+@media screen and (min-width: 0px) and (max-width: 388px) {
+
+  .about_header::after {
+      width: 130px;
   }
 }
 
