@@ -133,6 +133,10 @@
   background-color: #c06c86;       
 }
 
+.project_image {
+  border-radius: 5px;
+}
+
 @media screen and (min-width: 0px) and (max-width: 415px) {
 
   .port_header::after {
