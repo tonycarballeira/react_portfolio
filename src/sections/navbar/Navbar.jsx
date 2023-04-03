@@ -5,10 +5,10 @@ import Logo from '../../assets/face.jpeg'
 // import {IoIosColorPalette} from 'react-icons/io'
 import Disappear from './Disappear'
 import {ImDownload} from 'react-icons/im'
-// import CV from '../../assets/atc2.pdf'
+import CV from '../../assets/tony_resume.pdf'
 import {TfiThumbUp} from 'react-icons/tfi'
 
-const Navbar = () => {
+const Navbar = () => {  
 
   const scrollDirection = Disappear();
   const showSettings =  (event) => {
@@ -53,7 +53,7 @@ const Navbar = () => {
           {
             data.map(item => <li key={item.id}><a href={item.link}>{item.title}</a></li>)
           }
-          <li><a href={""} download className='resume__button'>Resume <ImDownload/></a></li>
+          <li><a href={CV} download="Tony Carballeira Resume" >Resume <ImDownload/></a></li>
         </ul> 
 
         <div className='burger-menu' onClick={updateMenu}>
@@ -72,7 +72,7 @@ const Navbar = () => {
       {
         data.map(item => <li key={item.id}><a href={item.link} onClick={updateMenu}>{item.title}</a></li>)
       }
-      <li><a href={""} download className='resume__button'>Resume <ImDownload/></a></li>
+      <li><a href={CV} download="Tony Carballeira Resume" className='resume__button'>Resume <ImDownload/></a></li>
     </div>
     </>
   )

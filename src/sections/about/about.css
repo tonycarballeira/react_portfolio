@@ -20,6 +20,10 @@ li {
     font-size: clamp(26px,5vw,32px);
 }
 
+.about__portrait {
+    box-shadow: 0 10px 30px -15px blue;
+}
+
 .about_header::after { 
     content: "";
     display: inline-block;
@@ -28,16 +32,17 @@ li {
     width: 300px;
     height: 1px;
     margin-left: 20px;
-    background-color: #d38076;       
+    background-color: #c06c86;       
 }
 
 .tint-magenta{
-    filter: hue-rotate(-270deg) sepia(55%) contrast(150%) saturate(300%) hue-rotate(270deg);
+    
     border-radius: 5px;
+    filter: hue-rotate(-30deg) sepia(25%) contrast(115%) saturate(300%) hue-rotate(05deg);
   }
 
   .tint-magenta:hover {
-    filter: hue-rotate(-30deg) sepia(55%) contrast(150%) saturate(300%) hue-rotate(05deg);
+    filter: hue-rotate(-270deg) sepia(25%) contrast(115%) saturate(300%) hue-rotate(270deg);
   }
 
 .skills__container {

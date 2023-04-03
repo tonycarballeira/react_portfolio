@@ -130,7 +130,7 @@
   width: 300px;
   height: 1px;
   margin-left: 20px;
-  background-color: #d38076;       
+  background-color: #c06c86;       
 }
 
 @media screen and (min-width: 0px) and (max-width: 415px) {
@@ -247,11 +247,11 @@
 
 .cards:hover .overlay {
   top: 0;
-  height: 72%;
+  height: 79%;
 }
 
 .overlay.slide {
   top: 0;
-  height: 72%;
+  height: 79%;
 }
 
