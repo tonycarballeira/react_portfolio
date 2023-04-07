@@ -37,7 +37,7 @@ const Portfolio = () => {
     { id: "2", name: "Crypto Faqs", 
     description: "Cryptocurrency information app showing coin stats and a bitcoin halving countdown timer. Navigate through a list of top cryptocurrencies and click for more info.", 
     techs: ["React", "TailwindCSS", "Javascript", "Coingecko API", "Blockchain API" ], 
-    git: "https://github.com/tonycarballeira/react_bitcoin_countdown.git", site: "https://grubby-rice.surge.sh/", img_href:"https://grubby-rice.surge.sh/", img_src: Crypto, selected: false, class: "overlay" },
+    git: "https://github.com/tonycarballeira/react_bitcoin_countdown.git", site: "https://cryptofaqs.vercel.app/", img_href:"https://cryptofaqs.vercel.app/", img_src: Crypto, selected: false, class: "overlay" },
     { id: "3", name: "School of Interactive Design", 
     description: "An online school for learning game design and development. A frontend demo of the app i originally built according to a designer's mockup.", 
     techs: ["Rails", "Bootstrap", "Jquery", "Html / CSS", "SQL" ], 
